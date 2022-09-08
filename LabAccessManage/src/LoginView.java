@@ -71,7 +71,8 @@ public class LoginView extends JFrame {
                 int type = user.getType();
                 if (type == 0) {
                     //show admin page
-
+                    LogHistoryPage frame = new LogHistoryPage();
+                    frame.setVisible(true);
                 } else if (type == 1) {
                     //show teacher page
                     LogHistoryPage frame = new LogHistoryPage();
